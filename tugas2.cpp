@@ -26,6 +26,9 @@ class Segitiga{
         }
     public  :
         void outputData(){
+            if (hitung){
+                cout << "Luasnya adalah : " << luas(alas,tinggi) << endl;   // kondisi hitung adalah true
+            }
         }
 };
 
