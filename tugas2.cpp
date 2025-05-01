@@ -3,3 +3,6 @@ using namespace std;
 
 class Segitiga {
 };
+
+int main(){
+}
