@@ -25,6 +25,8 @@ class Segitiga{
             return 0.5 * a * t;
         }
     public  :
+        void outputData(){
+        }
 };
 
 int main(){
