@@ -5,20 +5,12 @@ class Segitiga{
     public  :
         int alas;
         int tinggi;
-        bool hitung;
 
         void inputData(){
             cout << "Masukkan alas : ";
             cin >> alas;
             cout << "Masukkan tinggi : ";
             cin >> tinggi;
-
-            if (alas % 2 == 1){ // validasi bilangan bulat ganjil
-                hitung = false; // alas dengan bilangan ganjil tidak dihitung
-            }
-            else {
-                hitung = true;  // alas dengan bilangan genap akan dihitung
-            }
         }
     private :
         float luas (int a, int t){
@@ -26,11 +18,11 @@ class Segitiga{
         }
     public  :
         void outputData(){
-            if (hitung){
-                cout << "Luasnya adalah : " << luas(alas,tinggi) << endl;   // kondisi hitung adalah true
+            if (alas % 2 == 1){ // cek bilangan bulat ganjil
+                cout << "Luas yang dimasukkan adalah bilangan ganjil, luas tidak dapat dihitung" << endl;
             }
             else {
-                cout << "Luas yang dimasukkan adalah bilangan ganjil, luas tidak dapat dihitung" << endl;   // kondisi hitung adalah false
+                cout << "Luasnya adalah : " << luas(alas,tinggi) << endl; // hitung jika bilangan selain bilangan bulat ganjil
             }
         }
 };
