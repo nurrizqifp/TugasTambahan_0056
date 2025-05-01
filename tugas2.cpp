@@ -29,6 +29,9 @@ class Segitiga{
             if (hitung){
                 cout << "Luasnya adalah : " << luas(alas,tinggi) << endl;   // kondisi hitung adalah true
             }
+            else {
+                cout << "Luas yang dimasukkan adalah bilangan ganjil, luas tidak dapat dihitung" << endl;   // kondisi hitung adalah false
+            }
         }
 };
 
