@@ -6,6 +6,9 @@ class Segitiga{
         int alas;
         int tinggi;
         bool hitung;
+
+        void inputData(){
+        }
     private :
     public  :
 };
